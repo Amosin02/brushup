@@ -27,8 +27,8 @@ body{
     align-items: center;
 }
 
-.titleBox{
-    margin: 1rem;
+.contentContainer2{
+    gap: 7px;
 }
 
 .foot{
@@ -40,7 +40,7 @@ body{
     align-items: center;
 }
 
-button{
+.redirectAppstore{
     border-radius: 16px;
     margin-top: 1rem;
     padding: 8px;
@@ -51,11 +51,11 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.redirectAppstore:hover{
     background: #161b5a;
 }
 
-p{
+p, span{
     color: #d6d6d6;
 }
 
@@ -70,5 +70,24 @@ h1{
 
 .headingRight{
     display: flex;
-    gap: 2.2rem;
+    gap: 10px;
+    align-items: center;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #474747;
+    min-width: 135px;
+    text-align: center;
+    font-size: smaller;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover  .dropdownContent{
+    display: block;
 }
